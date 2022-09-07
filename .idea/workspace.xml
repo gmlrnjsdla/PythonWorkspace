@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fb1e471-802f-4119-8e77-903adc8bfe38" name="Changes" comment="Day1">
-      <change afterPath="$PROJECT_DIR$/Day2/for.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day2/list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day2/review.py" afterDir="false" />
+    <list default="true" id="0fb1e471-802f-4119-8e77-903adc8bfe38" name="Changes" comment="Day2">
+      <change afterPath="$PROJECT_DIR$/Day2/calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day2/module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day2/moduleTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661762455079</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Day2">
+      <created>1662522009659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662522009659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +147,7 @@
     <MESSAGE value="." />
     <MESSAGE value="테스트2" />
     <MESSAGE value="Day1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day1" />
+    <MESSAGE value="Day2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day2" />
   </component>
 </project>
