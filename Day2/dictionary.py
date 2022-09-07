@@ -93,13 +93,20 @@
 # print(dict8)
 
 #=======================================================#
-def check_and_clear(box):
-    if '불량품' in box.keys():
-        print('불량품이 있으면 box를 claer합니다.')
-        box.clear()
+# def check_and_clear(box):
+#     if '불량품' in box.keys():
+#         print('불량품이 있으면 box를 claer합니다.')
+#         box.clear()
+#
+# dict10 = {'불량품': 10, '정상품': 50, '수출품': 100}
+#
+# check_and_clear(dict10)
+# print(dict10)
 
-dict10 = {'불량품': 10, '정상품': 50, '수출품': 100}
+#========================================================#
 
-check_and_clear(dict10)
-print(dict10)
+products = {"풀": 800, "딱풀": 1200, "색종이": 1000, "색연필": 5000, "스케치북": 3500}
+catalog = {"겨울용 실내화": 12000, "잠자리채": 8000, "딱풀": 1400}
 
+products.update(catalog)
+print(products)
