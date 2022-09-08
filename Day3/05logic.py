@@ -19,7 +19,13 @@
 #============================================================
 
 a = 10
-b = None
+b = 20
 list = []
 print(bool(list))  # 0,None 을 제외한 모든 수는 TRUE
 
+if a:
+    mok = a / b
+    print('a/b = ', mok)
+    print('a는 null이 아닙니다!')
+else:
+    print('a는 null 입니다!')
