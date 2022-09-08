@@ -64,34 +64,34 @@ import random
 
 # 가위바위보
 
-win = 0
-lose = 0
-draw = 0
-user = input('가위, 바위, 보 중 1개를 입력하세요 (0 -> 게임종료)>> ')
-com = random.choice(['가위', '바위', '보'])
-while True:
-
-    if user == '0':                  # 0 입력했을때
-        print('게임을 종료합니다.')     # 출력
-        break                        #break
-    elif user == com:
-        print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
-        print('무승부 입니다.')
-        draw = draw + 1
-    elif (user == '가위' and com == '보') or \
-            (user == '바위' and com == '가위') or \
-            (user == '보' and com == '바위'):
-        print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
-        print('당신이 승리하였습니다.')
-        win = win + 1
-    else:
-        print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
-        print('컴퓨터가 승리하였습니다.')
-        lose = lose + 1
-    user = input('가위, 바위, 보 중 1개를 입력하세요 (0 -> 게임종료)>> ')
-    com = random.choice(['가위', '바위', '보'])
-
-print('게임결과 : {}전 {}승 {}패 {}무'.format(win+lose+draw, win, lose, draw))
+# win = 0
+# lose = 0
+# draw = 0
+# user = input('가위, 바위, 보 중 1개를 입력하세요 (0 -> 게임종료)>> ')
+# com = random.choice(['가위', '바위', '보'])
+# while True:
+#
+#     if user == '0':                  # 0 입력했을때
+#         print('게임을 종료합니다.')     # 출력
+#         break                        #break
+#     elif user == com:
+#         print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
+#         print('무승부 입니다.')
+#         draw = draw + 1
+#     elif (user == '가위' and com == '보') or \
+#             (user == '바위' and com == '가위') or \
+#             (user == '보' and com == '바위'):
+#         print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
+#         print('당신이 승리하였습니다.')
+#         win = win + 1
+#     else:
+#         print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
+#         print('컴퓨터가 승리하였습니다.')
+#         lose = lose + 1
+#     user = input('가위, 바위, 보 중 1개를 입력하세요 (0 -> 게임종료)>> ')
+#     com = random.choice(['가위', '바위', '보'])
+#
+# print('게임결과 : {}전 {}승 {}패 {}무'.format(win+lose+draw, win, lose, draw))
 
 #과제 
 # 사용자로부터 수를 입력받아 컴퓨터가 생각한 수를 맞추는 게임
