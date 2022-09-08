@@ -91,3 +91,5 @@ while True:
     user = input('가위, 바위, 보 중 1개를 입력하세요 (0 -> 게임종료)>> ')
     com = random.choice(['가위', '바위', '보'])
 print('게임결과 : {}전 {}승 {}패 {}무'.format(win+lose+draw, win, lose, draw))
+
+
