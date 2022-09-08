@@ -27,32 +27,50 @@
 # print(list1)
 #===========================================================
 
-def divide(a, b):
-    try:
-        mok = a / b
-        print(mok)
-    except ZeroDivisionError:
-        print('0으로 나눌 수 없습니다.')
+# def divide(a, b):
+#     try:
+#         mok = a / b
+#         print(mok)
+#     except ZeroDivisionError:
+#         print('0으로 나눌 수 없습니다.')
 
 # divide(20, 0)
 
 #==========================================================
 
-def divide2(a, b):
-    if b==0:
-        print('0으로 나눌 수 없습니다.')
-    else:
-        mok = a / b
-        print(mok)
+# def divide2(a, b):
+#     if b==0:
+#         print('0으로 나눌 수 없습니다.')
+#     else:
+#         mok = a / b
+#         print(mok)
+#
+# num2 = input('100을 나눌 피젯수를 입력하세요 >> ')
+# num2 = int(num2)
+#
+# while num2 == 0:
+#     print('피젯수는 0이 될 수 없습니다!')
+#     num2 = input('100을 나눌 피젯수를 입력하세요 >> ')
+#     num2 = int(num2)
+#
+# divide2(20, num2)
 
-num2 = input('100을 나눌 피젯수를 입력하세요 >> ')
-num2 = int(num2)
+#=============================================================
 
-while num2 == 0:
-    print('피젯수는 0이 될 수 없습니다!')
-    num2 = input('100을 나눌 피젯수를 입력하세요 >> ')
-    num2 = int(num2)
+a = 10
+b = 20
+try:
+    mok = a / b
+    print(mok)
 
-divide(20,num2)
-divide2(20, num2)
+    text = 'abc'
+    print(int(text))
+# except Exception as ex:
+except Exception:
+    # print('오류 발생: ', ex)
+    import traceback
+    traceback.print_exc()
 
+print('프로그램 완료')
+
+#=========================================================
