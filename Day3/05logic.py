@@ -72,20 +72,20 @@ com = random.choice(['가위', '바위', '보'])
 while True:
 
     if user == com:
-        print('당신은 {}, 컴퓨터는 {}를 냈습니다.'.format(user, com))
+        print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
         print('무승부 입니다.')
         draw = draw + 1
     elif (user == '가위' and com == '보') or \
             (user == '바위' and com == '가위') or \
             (user == '보' and com == '바위'):
-        print('당신은 {}, 컴퓨터는 {}를 냈습니다.'.format(user, com))
+        print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
         print('당신이 승리하였습니다.')
         win = win + 1
     elif user == '0':
         print('게임을 종료합니다.')
         break
     else:
-        print('당신은 {}, 컴퓨터는 {}를 냈습니다.'.format(user, com))
+        print('당신은 [{}], 컴퓨터는 [{}]를 냈습니다.'.format(user, com))
         print('컴퓨터가 승리하였습니다.')
         lose = lose + 1
     user = input('가위, 바위, 보 중 1개를 입력하세요 (0 -> 게임종료)>> ')
