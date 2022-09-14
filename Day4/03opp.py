@@ -32,11 +32,10 @@ class Student:
 
 student1 = Student()
 student1.name = '김유신'
+student2 = Student()
 
-print(student1.name)
-print(student1.hakbun)
-print(student1.gradeNum)
 student1.pirntName()
+student2.pirntName()
 
 #==================================================================
 
