@@ -54,3 +54,44 @@ print(cal1.sum())
 print(cal1.minus())
 print(cal1.mul())
 print(cal1.divide())
+
+print('=====================================================')
+#=======================================================
+
+# 자식 클래스 만들기 (부모는 Calculator 클래스)
+class SubCalculator(Calculator):
+    def power(self):
+        return self.a ** self.b
+
+sub1 = SubCalculator(20, 10)
+print(sub1.sum())
+sub2 = SubCalculator(10, 2)
+print(sub2.power())
+
+print('===============================================')
+#=========================================================
+
+class Car:
+    def run(self):
+        print('차가 달립니다.')
+
+class Truck(Car):
+    def __init__(self, weight):
+        self.weight = weight
+
+    def load(self):
+        print('{}kg 짐을 실었습니다.'.format(self.weight))
+
+    def run(self):
+        print('트럭이 달립니다.')
+
+class SportCar(Car):
+    pass
+
+truck1 = Truck(200)
+truck1.run()
+truck1.load()
+
+print('===============================================')
+sportCar1 = SportCar()
+sportCar1.run()
