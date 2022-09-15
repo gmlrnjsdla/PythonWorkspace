@@ -25,6 +25,9 @@ print('=================================================')
 
 def make_list(name):
     name1 = [name[i] for i in range(len(name))]
+    # name1 = []
+    # for i in range(len(name)):
+    #     name1.append(name[i])
     return name1
 
 
@@ -41,6 +44,10 @@ su1 = [3, 4, 5, 6, 7, 8]
 
 def pickup_even(list):
     list1 = [list[i] for i in range(len(list)) if list[i] % 2 == 0]
+    # list1 = []
+    # for i in range(len(list)):
+    #     if list[i] % 2 == 0:
+    #         list1.append(list[i])
     return list1
 
 
