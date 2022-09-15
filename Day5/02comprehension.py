@@ -7,9 +7,19 @@ for i in range(1, 11):              # range(1, 11) ->[1,2,3,4,5,6,7,8,9,10]
     areas.append(area)
 
 print(areas)
+
+
+areas2 = [i * i for i in range(1, 11)]
+print(areas2)
 print('=======================================')
 
 #===================================================
 
-areas2 = [i * i for i in range(1, 11)]
-print(areas2)
+areas3 = []
+for i in range(1, 11):
+    if i % 2 == 0:
+        areas3 = areas3 + [i * i]
+print(areas3)
+
+areas4 = [i * i for i in range(1, 11) if i % 2 == 0]
+print(areas4)
