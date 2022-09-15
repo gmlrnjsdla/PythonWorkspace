@@ -45,11 +45,18 @@ class Circle(Shape):
         super().test()  # 부모의 test 메서드를 호출
 
 class Triangle(Shape):
-    def tri(self):
-        print('저는 삼각형입니다.')
+    def __init__(self, number, width, height):
+        self.number = number
+        super().__init__(width, height)      # 부모 클래스의 초기화자 호출
 
-tri1 = Triangle(10, 20)
+    def tri(self):
+        print('저는 삼각형클래스이고 number값은 {} 입니다.'.format(self.number))
+
+tri1 = Triangle(1000, 20, 30)
+tri1.tri()
 tri1.area()
+
+
 # square1 = Square(50, 60)
 # square1.area()
 # square1.subArea()
