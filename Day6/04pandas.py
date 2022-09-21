@@ -9,3 +9,10 @@ df1 = pd.DataFrame(data, columns=['name','age','height'])
 print(df1)
 print(df1.name)
 print(df1.iloc[:,1])
+print('===============================================')
+
+print(df1.head(3))
+print(df1.tail(3))
+print('===============================================')
+
+print(df1.mean())
