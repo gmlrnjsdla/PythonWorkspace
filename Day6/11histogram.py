@@ -6,11 +6,9 @@ font_path = 'c:/Windows/Fonts/malgun.ttf'
 font = font_manager.FontProperties(fname=font_path).get_name()
 rc('font', family=font)
 
-x = np.arange(3)
-year = ['2019', '2020', '2021']
-values = [300, 800, 100]
+# weight = [68, 68, 68, 70, 71, 71, 83, 83, 83, 83, 65, 66, 70, 70, 70, 70, 77, 78, 81, 64, 65, 80]
+# plt.hist(weight, edgecolor='black')
 
-plt.bar(x, values, color="pink", width=0.4, edgecolor='black', linewidth=3,
-        hatch='\\')    # width default 0.8
-plt.xticks(x, year)
+a = np.random.rand(10000)
+plt.hist(a, bins=100, histtype='step')
 plt.show()
