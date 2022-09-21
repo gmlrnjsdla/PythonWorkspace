@@ -8,4 +8,4 @@ df1 = pd.DataFrame(data, columns=['name','age','height'])
 
 print(df1)
 print(df1.name)
-print(df1.iloc[1])
+print(df1.iloc[:,1])
