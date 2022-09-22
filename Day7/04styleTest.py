@@ -14,3 +14,4 @@ plt.rcParams['figure.figsize'] = (10, 5)    # 그래프 이미지 크기
 plt.rcParams['font.size'] = 15              # 폰트 크기
 plt.plot([1, 2, 3, 4], [5, 6, 7, 8])
 plt.show()
+# plt.savefig('testGraph.png', dpi=200, facecolor='pink')
