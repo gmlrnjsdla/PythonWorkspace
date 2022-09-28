@@ -3,6 +3,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5 import uic
+from PyQt5.QtCore import Qt
 form_class = uic.loadUiType('../ui/GoogleTransUi.ui')[0]
 
 
@@ -15,6 +16,8 @@ class TransAppWin(QMainWindow, form_class):
         self.statusBar().showMessage('GoogleTransApp v 1.0')
         self.init_btn.clicked.connect(self.init_btn_click)
         self.trans_btn.clicked.connect(self.trans_btn_click)
+        self.kor_input.returnPressed.connect(self.trans_btn_click)
+        # 한글 입력창에서 엔터키 이벤트 발생시 trans_btn_click 함수 호출
 
     def trans_btn_click(self):
         kor_text = self.kor_input.text()   # 한국어 라인에디트에 입력된 문자열을 가져오기
