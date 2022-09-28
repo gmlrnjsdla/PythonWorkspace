@@ -27,10 +27,10 @@ class MyWindow(QMainWindow):
         self.show()
 
     def btn_click1(self):    # slot
-        # print('버튼 1번이 클릭되었습니다!!!')
+        # print('버튼 1번이 클릭되었습니다!!!.')
         self.label1.setText('버튼1이 클릭되었습니다!!!')
     def btn_click2(self):    # slot
-        # print('버튼 2번이 클릭되었습니다!!!')
+        # print('버튼 2번이 클릭되었습니다!!!.')
         self.label1.setText('버튼2가 클릭되었습니다!!!')
 app = QApplication(sys.argv)
 myWin = MyWindow()

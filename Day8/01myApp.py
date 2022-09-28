@@ -21,7 +21,7 @@ class MyWindow(QMainWindow, form_class):
     def btn_click2(self):
         self.label1.setText('버튼2이 클릭되었습니다.')
 
-# 메인 윈도우를 실행시키고 그 후에 종료되지 않게 루프시키는 역할
+# 메인 윈도우를 실행시키고 그 후에 종료되지 않게 루프시키는 역할.
 app = QApplication(sys.argv)
 win = MyWindow()
 win.show()
