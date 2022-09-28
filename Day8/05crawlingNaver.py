@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-weather_html = requests.get('https://search.naver.com/search.naver?query=구월동날씨')
+area1 = input('날씨를 알고싶은 지역을 입력하세요 :')
+weather_html = requests.get('https://search.naver.com/search.naver?query={}날씨'.format(area1))
 
 weather_soup = BeautifulSoup(weather_html.text, 'html.parser')
 
@@ -36,3 +37,5 @@ print(dust1)
 # 초미세먼지 정보
 dust2 = dust_info[1].find('span', {'class':'txt'}).text
 print(dust2)
+# dust_info[2] : 자외선 정보, dust_info[3] : 일몰시간
+
