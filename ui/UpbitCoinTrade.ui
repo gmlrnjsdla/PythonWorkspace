@@ -19,7 +19,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(237, 255, 255);</string>
+   <string notr="true">background-color: rgb(255, 255, 243);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -238,7 +238,7 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="text">
-     <string>전일증가 : </string>
+     <string>전일종가 : </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
